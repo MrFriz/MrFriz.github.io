@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Contacter le club
-permalink: /contact.html
 ---
 
 Bienvenue sur le site Web de MrFriz le club d'Utimate Frisbee de Rennes.
