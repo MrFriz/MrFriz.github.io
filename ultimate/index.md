@@ -11,10 +11,10 @@ L’ultimate se joue avec deux équipes de sept joueurs chacune et un disque (fr
 Le terrain a une surface de 100 m par 37 m.
 En salle, il se joue sur un terrain de handball avec cinq joueurs par équipe.
 
-A chaque extrémité du terrain il y a une zone d’en-but de 18 m (extérieur) ou 6 m (en salle).
+À chaque extrémité du terrain, il y a une zone d’en-but de 18 m (extérieur) ou 6 m (en salle).
 
 #### L'engagement
-Au début du jeu et après chaque point marqué les équipes se tiennent sur leur ligne de but.
+Au début du jeu et après chaque point marqué, les équipes se tiennent sur leur ligne de but.
 L’équipe qui a marqué le dernier point lance le disque.
 L’autre équipe prend possession du disque là où il atterrit et devient alors l’équipe attaquante.
 
@@ -46,12 +46,12 @@ L'ultimate est un sport sans contact.
 Les contacts physiques ne sont pas autorisés.
 
 #### Fautes
-Quand une faute est constatée un des joueurs appelle "FAUTE".
+Quand une faute est constatée, un des joueurs appelle "FAUTE".
 Tous les joueurs s'arrêtent immédiatement et le jeu est stoppé.
 Le but est de reprendre le jeu comme si la faute n'avait pas eu lieu.
 Quand les joueurs ne peuvent se mettre d'accord le disque retourne au dernier lanceur et le jeu reprend de là.
 
 #### Pas d'arbitre
-Le fair play est un aspect important de tous les sports de disque.
+Le fair-play est un aspect important de tous les sports de disque.
 Contrairement aux autres sports, l’Ultimate se joue sans arbitre.
 Les joueurs sont eux-mêmes responsables du bon déroulement du jeu.
