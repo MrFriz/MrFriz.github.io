@@ -4,8 +4,9 @@ title: Contacter le club
 permalink: /contact.html
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Bienvenue sur le site Web de MrFriz le club d'Utimate Frisbee de Rennes.
+Pour nous rejoindre, venez tout simplement assister à un de nos entraînements. Ils sont ouverts à tous !
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Vous pouvez également nous contacter pour toute demande d'information, nous répondrons à toutes vos questions.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Si êtes intéressés pour nous rejoindre et voulez payer votre licence, votre trouverez toutes les informations nécessaires sur la page "Rejoindre Mr Friz".
