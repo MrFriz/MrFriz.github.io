@@ -7,6 +7,7 @@ body
 
 .main 
 {
+	position: relative;
 	background-image: url('b4.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -15,7 +16,7 @@ body
 	height: 100%;
 }
 
-.header
+.top
 {
 	position: relative;
 	width: 100%;
@@ -26,13 +27,14 @@ body
 .logo
 {
 	background-image: url('logo.png');
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: auto;
-	border-radius: 100px;
+	border-radius: 50px;
+	background-color: #FCFAF6;
 }
 
 .menu
@@ -65,4 +67,11 @@ body
 .menu .menu-item.selected
 {
 	border-bottom: solid 5px #1A8C96;
+}
+
+.bottom
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
