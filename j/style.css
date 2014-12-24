@@ -49,9 +49,10 @@ body
 
 .menu .menu-item
 {
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 16px;
 	margin: 0;
-	padding: 20px 20px 19px 20px;
+	padding: 20px 20px 12px 20px;
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
@@ -61,12 +62,12 @@ body
 .menu .menu-item:hover
 {
 	background-color: #CCE5D4;
-	border-bottom: solid 5px #1A8C96;
+	border-bottom: solid 6px #1A8C96;
 }
 
 .menu .menu-item.selected
 {
-	border-bottom: solid 5px #1A8C96;
+	border-bottom: solid 6px #1A8C96;
 }
 
 .bottom
