@@ -24,7 +24,33 @@ body
 	margin:0;
 }
 
-.menu
+.top .menu .left
+{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 50%;
+	text-align: right;
+	margin-right: 140px;
+}
+
+.top .menu .center
+{
+	display: inline-block;
+	margin: auto;
+}
+
+.top .menu .right
+{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	text-align: left;
+	margin-left: 140px;
+}
+
+.top .menu
 {
 	text-align: center;
 	width: 100%;
@@ -35,37 +61,22 @@ body
 	border-bottom: 5px solid #fcfdf7;
 }
 
-.menu ul 
+.menu .menu-item
 {
-	list-style-type:none;
-	height: 40px;
-	margin: auto;
-	padding: 0;
-}
-
-.menu ul li
-{
+	color: #fcfdf7;
 	display: inline-block;
 	height: 40px;
-	vertical-align: top;
+	padding: 0 20px;
 }
 
-.menu ul li a
+.menu .menu-item a
 {
-	display: block;
-	margin: 0 10px;
-	font-family: 'Titillium Web', sans-serif;
-	color: white;
-	font-size: 14px;
-	text-transform: uppercase;
+	color: #fcfdf7;
+	font-family: "Titillium Web", sans-serif;
 	text-decoration: none;
-	cursor: pointer;
-	height: 40px;
-	vertical-align: middle;
-	line-height: 40px;
 }
 
-.menu ul li.logo a
+.top .menu .logo a
 {
 	height: 200px;
 	width: 263px;
@@ -73,17 +84,8 @@ body
 	background-size: contain;
 	background-repeat: no-repeat;
 	cursor: pointer;
-}
-
-.menu .menu-item
-{
-	margin: 0;
-	background-repeat: no-repeat;
-	display: inline-block;
-	
-	
-	vertical-align: top;
-	padding: 9px;
+	display: block;
+	font-size: 0;
 }
 
 .menu .menu-item:hover
@@ -146,15 +148,58 @@ body
 	background-color: #fbfaf6;
 }
 
-.section.club .block
-{
-	background-color: #d2e4e4;
-	width: 600px;
-	height: 800px;
-	margin: auto;
-}
-
 a 
 {
 	font-size: 20px;
+}
+
+.section .content
+{
+	width: 100%;
+	height: 100%;
+}
+
+.section .content .block1
+{
+	background-color: #d2e4e4;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	margin-top: 300px;
+}
+
+.section .content .block1 .line
+{
+	height: 200px;
+	width: 560px;
+	padding: 20px;
+}
+
+.section .content .block1 .line .photo
+{
+	background-image: url('../images/fab1.jpg');
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+.section .content .block1 .line .photo2
+{
+	background-image: url('../images/all.jpg');
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+.section .content .block1 .line .text
+{
+	display: inline-block;
+	width: 300px;
+	padding: 20px;
 }
