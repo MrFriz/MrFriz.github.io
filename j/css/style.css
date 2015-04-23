@@ -8,7 +8,7 @@ body
 .main 
 {
 	position: relative;
-	background-image: url('../images/b4.jpg');
+	background-color: #09333a;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -56,9 +56,9 @@ body
 	width: 100%;
 	height: 40px;
 	margin: auto;
-	background-color: #0c343c;
+	background-color: #198c97;
 	font-size: 0;
-	border-bottom: 5px solid #fcfdf7;
+	border-bottom: 2px solid #fbfaf6;
 }
 
 .menu .menu-item
@@ -74,13 +74,16 @@ body
 	color: #fcfdf7;
 	font-family: "Titillium Web", sans-serif;
 	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 40px;
 }
 
 .top .menu .logo a
 {
-	height: 200px;
-	width: 263px;
-	background-image: url('../images/logo.png');
+	height: 199px;
+	width: 276px;
+	background-image: url('../images/badge.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -90,12 +93,12 @@ body
 
 .menu .menu-item:hover
 {
-	border-bottom: solid 6px #1A8C96;
+	border-bottom: solid 2px #537075;
 }
 
 .menu .menu-item.selected
 {
-	border-bottom: solid 6px #536f7b;
+	border-bottom: solid 2px #537075;
 }
 
 .bottom
@@ -103,16 +106,17 @@ body
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 80px;
-	background-color: #0c343c;
+	height: 98px;
+	background-color: #198c97;
 }
 
 .bottom .logo 
 {
-	background-image: url('../images/bottom_logo.png');
-	height: 80px;
-	width: 120px;
+	background-image: url('../images/bottom.png');
+	height: 61px;
+	width: 151px;
 	margin: auto;
+	margin-top: 18px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -161,9 +165,9 @@ a
 
 .section .content .block1
 {
-	background-color: #d2e4e4;
-	width: 600px;
-	height: 600px;
+	background-color: #fbfaf6;
+	width: 764px;
+	height: 612px;
 	margin: auto;
 	margin-top: 300px;
 }
