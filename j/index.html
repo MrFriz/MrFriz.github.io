@@ -18,6 +18,22 @@
 			{
 				anchors: ['main', 'club', 'news', 'training', 'contact']
 			});
+
+			$('.menu-item').click(function()
+			{
+				if($(".center .logo").css("margin-top") == "-125px") return;
+
+				$(".center .logo").animate({ 
+					"margin-top": "-=125px"
+				}, 200 );
+			});
+
+			$(".center .logo").click(function()
+			{
+				$(this).animate({ 
+					"margin-top": "+=125px"
+				}, 200 );
+			});
 		});
 	</script>
 
@@ -28,7 +44,6 @@
 			<div class="content">
 
 				<div class="block1">
-					
 
 				</div>
 				
