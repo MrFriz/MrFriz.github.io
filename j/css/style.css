@@ -158,19 +158,12 @@ a
 	font-size: 20px;
 }
 
-.section .content
-{
-	width: 100%;
-	height: 100%;
-}
-
 .section .content .block1
 {
 	background-color: #fbfaf6;
 	width: 764px;
 	height: 612px;
 	margin: auto;
-	margin-top: 300px;
 }
 
 .section .content .block1 .line

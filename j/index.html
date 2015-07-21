@@ -13,64 +13,54 @@
 <body>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
+		
+		var load_page = function(url)
+		{
+			var response = $.ajax({
+				async : false,
+				url : url,
+				dataType : "text"
+			});
+
+			return response.responseText;
+		};
+
+		$(document).ready(function()
+		{
 		    $('#fullpage').fullpage(
 			{
 				anchors: ['main', 'club', 'news', 'training', 'contact']
 			});
 
-			$('.menu-item').click(function()
-			{
-				if($(".center .logo").css("margin-top") == "-125px") return;
-
-				$(".center .logo").animate({ 
-					"margin-top": "-=125px"
-				}, 200 );
-			});
-
-			$(".center .logo").click(function()
-			{
-				$(this).animate({ 
-					"margin-top": "+=125px"
-				}, 200 );
-			});
+			$('.section.main .content').append(load_page('pages/home.html'));
+			$('.section.club .content').append(load_page('pages/club.html'));
+			$('.section.news .content').append(load_page('pages/news.html'));
+			$('.section.training .content').append(load_page('pages/training.html'));
+			$('.section.contact .content').append(load_page('pages/contact.html'));
 		});
+
 	</script>
 
 	<div id="fullpage">
 
-		<div class="section main">
-
-			<div class="content">
-
-				<div class="block1">
-
-				</div>
-				
-
-			</div>
-            
-			<div class="bottom">
-				
-			</div>
-
+		<div class="section main active">
+			<div class="content"></div>
 		</div>
 
 		<div class="section club">
-			
-			
-
+			<div class="content"></div>
 		</div>
 
 		<div class="section training">
-
+			<div class="content"></div>
 		</div>
 
 		<div class="section news">
-
+			<div class="content"></div>
 		</div>
 
 		<div class="section contact">
+			<div class="content"></div>
 		</div>
 
 	</div>
