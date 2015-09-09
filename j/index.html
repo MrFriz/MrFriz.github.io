@@ -4,13 +4,17 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
 
 </head>
 <body>
+
 
 	<script type="text/javascript">
 		
@@ -29,10 +33,10 @@
 		{
 		    $('#fullpage').fullpage(
 			{
-				anchors: ['main', 'club', 'news', 'training', 'contact']
+				anchors: ['home', 'club', 'news', 'training', 'contact']
 			});
 
-			$('.section.main .content').append(load_page('pages/home.html'));
+			$('.section.home .content').append(load_page('pages/home.html'));
 			$('.section.club .content').append(load_page('pages/club.html'));
 			$('.section.news .content').append(load_page('pages/news.html'));
 			$('.section.training .content').append(load_page('pages/training.html'));
@@ -43,7 +47,7 @@
 
 	<div id="fullpage">
 
-		<div class="section main active">
+		<div class="section home active">
 			<div class="content"></div>
 		</div>
 
@@ -51,11 +55,11 @@
 			<div class="content"></div>
 		</div>
 
-		<div class="section training">
+		<div class="section news">
 			<div class="content"></div>
 		</div>
 
-		<div class="section news">
+		<div class="section training">
 			<div class="content"></div>
 		</div>
 
@@ -72,7 +76,7 @@
 				<div class="menu-item" data-menuanchor="news"><a href="#news">Actualités</a></div>
 			</div>
 			<div class="center">
-				<div class="logo" data-menuanchor="main" class="active"><a href="#main">Le club</a></div>
+				<div class="logo" data-menuanchor="home" class="active"><a href="#home">Le club</a></div>
 			</div>
 			<div class="right">
 				<div class="menu-item" data-menuanchor="training"><a href="#training">Entraînements</a></div>

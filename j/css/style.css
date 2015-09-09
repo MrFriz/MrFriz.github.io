@@ -2,10 +2,17 @@ body
 {
 	margin: 0;
 	color: #09323c;
-	font-family: Arial;
+	font-family: 'PT Sans', sans-serif;
 }
 
-.main 
+h2 {
+	text-transform: uppercase;
+    color: #09353C;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.home 
 {
 	position: relative;
 	background-color: #09333a;
@@ -127,41 +134,15 @@ body
 	position: relative;
 }
 
-.section.club 
-{
-	background-color: blue;
-}
-
-.section.training 
-{
-	background-color: red;
-}
-
-.section.news 
-{
-	background-color: green;
-}
-
-.section.contact 
-{
-	background-color: purple;
-}
-
-
-.section.club
-{
-	background-color: #fbfaf6;
-}
-
 a 
 {
 	font-size: 20px;
 }
 
-.section .content .block1
+.section .content .block_news
 {
 	background-color: #fbfaf6;
-	width: 764px;
+	width: 500px;
 	height: 612px;
 	margin: auto;
 }
@@ -200,4 +181,58 @@ a
 	display: inline-block;
 	width: 300px;
 	padding: 20px;
+}
+
+.home 
+{
+	background-image: url('../images/ours.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news
+{
+	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #09333a;
+}
+
+.news .content
+{
+    width: 500px;
+    border: 20px white solid;
+    margin: auto;
+}
+
+.club
+{
+	background-image: url('../images/club.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.club .bloc 
+{
+	width: 500px;
+	margin: auto;
+	background-color: #fbf9f5;
+	padding: 40px;
+}
+
+.training 
+{
+	background-image: url('../images/training.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.training .bloc 
+{
+	width: 500px;
+	margin: auto;
+	background-color: #fbf9f5;
+	border: 8px solid #09333A;
+	padding: 40px;
+	padding-top: 20px;
 }
