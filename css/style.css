@@ -1,0 +1,245 @@
+body
+{
+	margin: 0;
+	color: #09323c;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
+    color: #09353C;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.home
+{
+	position: relative;
+	background-color: #09333a;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.top
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	margin:0;
+}
+
+.top .menu .left
+{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 50%;
+	text-align: right;
+	margin-right: 140px;
+}
+
+.top .menu .center
+{
+	display: inline-block;
+	margin: auto;
+}
+
+.top .menu .right
+{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	text-align: left;
+	margin-left: 140px;
+}
+
+.top .menu
+{
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	margin: auto;
+	background-color: #198c97;
+	font-size: 0;
+	border-bottom: 2px solid #fbfaf6;
+}
+
+.menu .menu-item
+{
+	color: #fcfdf7;
+	display: inline-block;
+}
+
+.menu .menu-item a
+{
+	color: #fcfdf7;
+	font-family: "Titillium Web", sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 40px;
+	padding: 0 20px;
+	display: block;
+	height: 40px;
+}
+
+.top .menu .logo a
+{
+	height: 199px;
+	width: 276px;
+	background-image: url('../images/badge.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+}
+
+.menu .menu-item:hover
+{
+	border-bottom: solid 2px #537075;
+}
+
+.menu .menu-item.selected
+{
+	border-bottom: solid 2px #537075;
+}
+
+.bottom
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 98px;
+	background-color: #198c97;
+}
+
+.bottom .logo 
+{
+	background-image: url('../images/bottom.png');
+	height: 61px;
+	width: 151px;
+	margin: auto;
+	margin-top: 18px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.section
+{
+	position: relative;
+}
+
+a 
+{
+	font-size: 20px;
+}
+
+.section .content .block_news
+{
+	background-color: #fbfaf6;
+	width: 500px;
+	height: 612px;
+	margin: auto;
+}
+
+.section .content .block1 .line
+{
+	height: 200px;
+	width: 560px;
+	padding: 20px;
+}
+
+.section .content .block1 .line .photo
+{
+	background-image: url('../images/fab1.jpg');
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+.section .content .block1 .line .photo2
+{
+	background-image: url('../images/all.jpg');
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+.section .content .block1 .line .text
+{
+	display: inline-block;
+	width: 300px;
+	padding: 20px;
+}
+
+.home .content
+{
+	background-image: url('../images/ours.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    bottom: 95px;
+}
+
+.news
+{
+	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #09333a;
+}
+
+.news .content
+{
+    width: 500px;
+    border: 20px white solid;
+    margin: auto;
+}
+
+.club
+{
+	background-image: url('../images/club.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.club .bloc 
+{
+	width: 500px;
+	margin: auto;
+	background-color: #fbf9f5;
+	padding: 40px;
+}
+
+.training 
+{
+	background-image: url('../images/training.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.training .bloc 
+{
+	width: 500px;
+	margin: auto;
+	background-color: #fbf9f5;
+	border: 8px solid #09333A;
+	padding: 40px;
+	padding-top: 20px;
+}

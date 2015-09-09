@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title></title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
+
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var load_page = function(url)
+		{
+			var response = $.ajax({
+				async : false,
+				url : url,
+				dataType : "text"
+			});
+
+			return response.responseText;
+		};
+
+		$(document).ready(function()
+		{
+		    $('#fullpage').fullpage(
+			{
+				anchors: ['home', 'club', 'news', 'training', 'contact']
+			});
+
+			$('.section.home .content').append(load_page('pages/home.html'));
+			$('.section.club .content').append(load_page('pages/club.html'));
+			$('.section.news .content').append(load_page('pages/news.html'));
+			$('.section.training .content').append(load_page('pages/training.html'));
+			$('.section.contact .content').append(load_page('pages/contact.html'));
+		});
+
+	</script>
+
+	<div id="fullpage">
+
+		<div class="section home active">
+			<div class="content"></div>
+		</div>
+
+		<div class="section club">
+			<div class="content"></div>
+		</div>
+
+		<div class="section news">
+			<div class="content"></div>
+		</div>
+
+		<div class="section training">
+			<div class="content"></div>
+		</div>
+
+		<div class="section contact">
+			<div class="content"></div>
+		</div>
+
+	</div>
+
+	<div class="top">
+		<div class="menu">
+			<div class="left">
+				<div class="menu-item" data-menuanchor="club"><a href="#club">Le club</a></div>
+				<div class="menu-item" data-menuanchor="news"><a href="#news">Actualités</a></div>
+			</div>
+			<div class="center">
+				<div class="logo" data-menuanchor="home" class="active"><a href="#home">Le club</a></div>
+			</div>
+			<div class="right">
+				<div class="menu-item" data-menuanchor="training"><a href="#training">Entraînements</a></div>
+				<div class="menu-item" data-menuanchor="contact"><a href="#contact">Contact</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom">
+		<div class="logo"></div>
+	</div>
+
+</body>
+</html>
