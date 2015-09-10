@@ -12,13 +12,12 @@ h2 {
     margin-top: 0;
 }
 
-.home
+.home 
 {
 	position: relative;
 	background-color: #09333a;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	width: 100%;
 	height: 100%;
 }
@@ -184,17 +183,11 @@ a
 	padding: 20px;
 }
 
-.home .content
+.home 
 {
 	background-image: url('../images/ours.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 40px;
-    bottom: 95px;
 }
 
 .news
