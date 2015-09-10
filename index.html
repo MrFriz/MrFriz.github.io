@@ -1,49 +1,20 @@
 <html>
 <head>
-	<title></title>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>Mister Friz - Utimate frisbee</title>
+
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
 
 </head>
+
 <body>
-
-
-	<script type="text/javascript">
-		
-		var load_page = function(url)
-		{
-			var response = $.ajax({
-				async : false,
-				url : url,
-				dataType : "text"
-			});
-
-			return response.responseText;
-		};
-
-		$(document).ready(function()
-		{
-		    $('#fullpage').fullpage(
-			{
-				anchors: ['home', 'club', 'news', 'training', 'contact']
-			});
-
-			$('.section.home .content').append(load_page('pages/home.html'));
-			$('.section.club .content').append(load_page('pages/club.html'));
-			$('.section.news .content').append(load_page('pages/news.html'));
-			$('.section.training .content').append(load_page('pages/training.html'));
-			$('.section.contact .content').append(load_page('pages/contact.html'));
-		});
-
-	</script>
 
 	<div id="fullpage">
 
@@ -88,6 +59,40 @@
 	<div class="bottom">
 		<div class="logo"></div>
 	</div>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
+
+	<script type="text/javascript">
+
+		var load_page = function(url)
+		{
+			var response = $.ajax({
+				async : false,
+				url : url,
+				dataType : "text"
+			});
+
+			return response.responseText;
+		};
+
+		$(document).ready(function()
+		{
+			$('#fullpage').fullpage(
+					{
+						anchors: ['home', 'club', 'news', 'training', 'contact']
+					});
+
+			$('.section.home .content').append(load_page('pages/home.html'));
+			$('.section.club .content').append(load_page('pages/club.html'));
+			$('.section.news .content').append(load_page('pages/news.html'));
+			$('.section.training .content').append(load_page('pages/training.html'));
+			$('.section.contact .content').append(load_page('pages/contact.html'));
+		});
+
+	</script>
 
 </body>
 </html>
