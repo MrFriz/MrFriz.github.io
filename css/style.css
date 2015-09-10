@@ -187,6 +187,7 @@ a
 {
 	background-image: url('../images/ours.jpg');
     background-size: cover;
+	background-position: center top;
     background-repeat: no-repeat;
 }
 
