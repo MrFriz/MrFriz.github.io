@@ -187,6 +187,7 @@ a
 {
 	background-image: url('../images/ours.jpg');
     background-size: cover;
+	background-position: center top;
     background-repeat: no-repeat;
 }
 
@@ -207,7 +208,7 @@ a
 
 .club
 {
-	background-image: url('../images/club.png');
+	background-image: url('../images/club.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
