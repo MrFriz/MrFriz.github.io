@@ -1,5 +1,6 @@
 <html>
 <head>
+<<<<<<< HEAD
 	<title></title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="css/style.css">
@@ -12,10 +13,21 @@
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+=======
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <title>Mister Friz - Utimate frisbee</title>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+
+>>>>>>> 079c430a99d932786da6bfe5b1cbb253d33b3779
 </head>
+
 <body>
 
-
+<<<<<<< HEAD
 	<script type="text/javascript">
 		
 		var load_page = function(url)
@@ -92,6 +104,94 @@
 		<a class="fa fa-comment-o fa-2x email" href="#contact" target="_blank"></a>
 		<a class="fa fa-youtube-play fa-2x youtube" href="https://www.youtube.com/channel/UCg0haP0EfUp9pQGxOoXoD5A" target="_blank"></a>
 	</div>
+=======
+<div id="fullpage">
+
+    <div class="section home active">
+        <div class="content"></div>
+    </div>
+
+    <div class="section club">
+        <div class="content"></div>
+    </div>
+
+    <div class="section news">
+        <div class="content"></div>
+    </div>
+
+    <div class="section training">
+        <div class="content"></div>
+    </div>
+
+    <div class="section contact">
+        <div class="content"></div>
+    </div>
+
+</div>
+
+<div class="top">
+    <div class="menu">
+        <div class="left">
+            <div class="menu-item" data-menuanchor="club"><a href="#club">Le club</a></div>
+            <div class="menu-item" data-menuanchor="news"><a href="#news">Actualités</a></div>
+        </div>
+        <div class="center">
+            <div class="logo" data-menuanchor="home" class="active"><a href="#home">Le club</a></div>
+        </div>
+        <div class="right">
+            <div class="menu-item" data-menuanchor="training"><a href="#training">Entraînements</a></div>
+            <div class="menu-item" data-menuanchor="contact"><a href="#contact">Contact</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="logo"></div>
+</div>
+
+
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
+
+<script type="text/javascript">
+
+    function loadPage2(url, $element) {
+        $.ajax({
+            url: url,
+            dataType: "text"
+        }).done(function (data) {
+            $element.append(data);
+        });
+    }
+
+    $(document).ready(function () {
+        $('#fullpage').fullpage(
+                {
+                    anchors: ['home', 'club', 'news', 'training', 'contact']
+                });
+
+        loadPage2('pages/home.html',
+                $('.section.home .content'));
+        loadPage2('pages/club.html',
+                $('.section.club .content'));
+        loadPage2('pages/news.html',
+                $('.section.news .content'));
+        loadPage2('pages/training.html',
+                $('.section.training .content'));
+        loadPage2('pages/contact.html',
+                $('.section.contact .content'));
+
+    });
+
+</script>
+>>>>>>> 079c430a99d932786da6bfe5b1cbb253d33b3779
 
 </body>
 </html>
