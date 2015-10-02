@@ -45,6 +45,7 @@ h2 {
 {
 	display: inline-block;
 	margin: auto;
+	vertical-align: top;
 }
 
 .top .menu .right
@@ -99,6 +100,41 @@ h2 {
 	font-size: 0;
 }
 
+body.club .top .menu .logo,
+body.news .top .menu .logo,
+body.training .top .menu .logo,
+body.contact .top .menu .logo
+{
+	animation-name: logo_folding;
+    animation-duration: 0.5s;
+    margin-top: -100px;
+}
+
+@keyframes logo_folding {
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: -100px;
+	}
+}
+
+body.home .top .menu .logo
+{
+	animation-name: logo_unfolding;
+    animation-duration: 0.5s;
+	margin-top: 0;
+}
+
+@keyframes logo_unfolding {
+	from {
+		margin-top: -100px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
 .menu .menu-item:hover
 {
 	border-bottom: solid 2px #537075;
@@ -145,7 +181,7 @@ h2 {
     color: white;
     cursor: pointer;
     vertical-align: top;
-    padding: 20px 10px;
+    padding: 20px 20px;
     text-decoration: none;
 }
 
@@ -257,10 +293,29 @@ a
 
 .club .bloc 
 {
-	width: 500px;
+	max-width: 500px;
 	margin: auto;
-	background-color: #fbf9f5;
-	padding: 40px;
+	background-color: white;
+	padding: 10px;
+}
+
+.club .bloc h2
+{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #198C97;
+	color: white;
+}
+
+.club .bloc h3
+{
+}
+
+.club .bloc p
+{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .training 

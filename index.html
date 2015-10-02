@@ -37,23 +37,40 @@
         });
     }
 
+    var anchors = ['home', 'club', 'news', 'training', 'contact'];
+
+    $('body').addClass(anchors[0]);
+
     $(document).ready(function () {
         $('#fullpage').fullpage(
-                {
-                    anchors: ['home', 'club', 'news', 'training', 'contact']
-                });
+        {
+            anchors: anchors,
+            onLeave: function(index, nextIndex, direction)
+            {
+            	$('body').removeClass(anchors[index-1]);
+            	$('body').addClass(anchors[nextIndex-1]);
+            },
+	        afterLoad: function(anchorLink, index){},
+	        afterRender: function(){},
+	        afterResize: function(){},
+	        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+	        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        });
 
-        loadPage2('pages/home.html',
-                $('.section.home .content'));
-        loadPage2('pages/club.html',
-                $('.section.club .content'));
-        loadPage2('pages/news.html',
-                $('.section.news .content'));
-        loadPage2('pages/training.html',
-                $('.section.training .content'));
-        loadPage2('pages/contact.html',
-                $('.section.contact .content'));
+        loadPage2('pages/home.html', $('.section.home .content'));
+        loadPage2('pages/club.html', $('.section.club .content'));
+        loadPage2('pages/news.html', $('.section.news .content'));
+        loadPage2('pages/training.html', $('.section.training .content'));
+        loadPage2('pages/contact.html', $('.section.contact .content'));
 
+        var body_class = '';
+
+        $('.menu .mi').click(function()
+        {
+        	$('body').removeClass(body_class);
+        	body_class = $(this).attr('data-menuanchor')
+        	$('body').addClass(body_class);
+        });
     });
 
 </script>
@@ -85,25 +102,25 @@
 	<div class="top">
 		<div class="menu">
 			<div class="left">
-				<div class="menu-item" data-menuanchor="club"><a href="#club">Le club</a></div>
-				<div class="menu-item" data-menuanchor="news"><a href="#news">Actualités</a></div>
+				<div class="mi menu-item" data-menuanchor="club"><a href="#club">Le club</a></div>
+				<div class="mi menu-item" data-menuanchor="news"><a href="#news">Actualités</a></div>
 			</div>
 			<div class="center">
-				<div class="logo" data-menuanchor="home" class="active"><a href="#home">Le club</a></div>
+				<div class="mi logo" data-menuanchor="home" class="active"><a href="#home">Le club</a></div>
 			</div>
 			<div class="right">
-				<div class="menu-item" data-menuanchor="training"><a href="#training">Entraînements</a></div>
-				<div class="menu-item" data-menuanchor="contact"><a href="#contact">Contact</a></div>
+				<div class="mi menu-item" data-menuanchor="training"><a href="#training">Entraînements</a></div>
+				<div class="mi menu-item" data-menuanchor="contact"><a href="#contact">Contact</a></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="bottom">
-		<a class="fa fa-facebook fa-2x facebook" href="https://www.facebook.com/Mr-Friz-Ultimate-Rennes-170654506285164/timeline/" target="_blank"></a>
-		<a class="fa fa-twitter fa-2x twitter" href="https://twitter.com/mr_friz" target="_blank"></a>
+		<a class="fa fa-facebook fa-2x facebook" href="https://www.facebook.com/Mr-Friz-Ultimate-Rennes-170654506285164/timeline/" target="blank"></a>
+		<a class="fa fa-twitter fa-2x email" href="#contact"></a>
 		<div class="logo"></div>
-		<a class="fa fa-comment-o fa-2x email" href="#contact" target="_blank"></a>
-		<a class="fa fa-youtube-play fa-2x youtube" href="https://www.youtube.com/channel/UCg0haP0EfUp9pQGxOoXoD5A" target="_blank"></a>
+		<a class="fa fa-comment-o fa-2x email" href="#contact"></a>
+		<a class="fa fa-youtube-play fa-2x youtube" href="https://www.youtube.com/channel/UCg0haP0EfUp9pQGxOoXoD5A" target="blank"></a>
 	</div>
 
 </body>
