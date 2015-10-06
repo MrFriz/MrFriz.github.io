@@ -88,7 +88,7 @@ h2 {
 	height: 40px;
 }
 
-.top .menu .logo a
+.top .menu .badge a
 {
 	height: 199px;
 	width: 276px;
@@ -100,17 +100,93 @@ h2 {
 	font-size: 0;
 }
 
-body.club .top .menu .logo,
-body.news .top .menu .logo,
-body.training .top .menu .logo,
-body.contact .top .menu .logo
+body .top .menu .badge a .logo
 {
-	animation-name: logo_folding;
-    animation-duration: 0.5s;
+    background-image: url('../images/badge_logo.png');
+    height: 90px;
+    width: 100px;
+    margin: auto;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+}
+
+body .top .menu .badge a .mf
+{
+	background-image: url('../images/badge_mf.png');
+	height: 58px;
+	width: 200px;
+	margin: auto;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	margin-top: -20px;
+}
+
+body.club .top .menu .badge a .mf,
+body.news .top .menu .badge a .mf,
+body.training .top .menu .badge a .mf,
+body.contact .top .menu .badge a .mf
+{
+	animation-name: badge_mf_folding;
+    animation-duration: 1s;
+	margin-top: 15px;
+}
+
+@keyframes badge_mf_folding {
+	from {
+		margin-top: -20px;
+	}
+	to {
+		margin-top: 15px;
+	}
+}
+
+body.home .top .menu .badge a .mf
+{
+	animation-name: badge_mf_unfolding;
+    animation-duration: 1s;
+	margin-top: -20px;
+}
+
+@keyframes badge_unfolding {
+	from {
+		margin-top: 15px;
+	}
+	to {
+		margin-top: -20px;
+	}
+}
+
+body .top .menu .badge a .uf
+{
+    background-image: url('../images/badge_uf.png');
+    height: 24px;
+    width: 140px;
+    margin: auto;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+
+body.club .top .menu .badge a .uf,
+body.news .top .menu .badge a .uf,
+body.training .top .menu .badge a .uf,
+body.contact .top .menu .badge a .uf
+{
+	display: none;
+}
+
+body.club .top .menu .badge,
+body.news .top .menu .badge,
+body.training .top .menu .badge,
+body.contact .top .menu .badge
+{
+	animation-name: badge_folding;
+    animation-duration: 0.8s;
     margin-top: -100px;
 }
 
-@keyframes logo_folding {
+@keyframes badge_folding {
 	from {
 		margin-top: 0;
 	}
@@ -119,14 +195,14 @@ body.contact .top .menu .logo
 	}
 }
 
-body.home .top .menu .logo
+body.home .top .menu .badge
 {
-	animation-name: logo_unfolding;
-    animation-duration: 0.5s;
+	animation-name: badge_unfolding;
+    animation-duration: 0.8s;
 	margin-top: 0;
 }
 
-@keyframes logo_unfolding {
+@keyframes badge_unfolding {
 	from {
 		margin-top: -100px;
 	}
@@ -271,7 +347,7 @@ a
 
 .news
 {
-	
+	background-image: url('../images/Site_Mrfriz_fond3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #09333a;
@@ -286,36 +362,68 @@ a
 
 .club
 {
-	background-image: url('../images/club.jpg');
+	background-image: url('../images/Site_Mrfriz_fond2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .club .bloc 
 {
-	max-width: 500px;
+	width: 800px;
 	margin: auto;
 	background-color: white;
-	padding: 10px;
+	padding: 40px;
+	position: relative;
+	margin-top: -60px;
 }
 
 .club .bloc h2
 {
 	width: 100%;
 	text-align: center;
-	padding: 10px 0;
-	background-color: #198C97;
-	color: white;
+	padding: 0;
+	color: #198C97;
 }
 
-.club .bloc h3
+.club .bloc .left 
 {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.club .bloc .right
+{
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.club .bloc .photo_1
+{
+	background-image: url('../images/photo_1.jpg');
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+
+.club .bloc .photo_2
+{
+	background-image: url('../images/all.jpg');
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    margin-top: 40px;
 }
 
 .club .bloc p
 {
+	margin:0;
+	margin-bottom: 10px;
 	margin-left: 20px;
-	margin-right: 20px;
+	text-align: justify;
 }
 
 .training 
