@@ -122,10 +122,10 @@ body .top .menu .badge a .mf
 	margin-top: -20px;
 }
 
-body.club .top .menu .badge a .mf,
-body.news .top .menu .badge a .mf,
-body.training .top .menu .badge a .mf,
-body.contact .top .menu .badge a .mf
+body.show_club .top .menu .badge a .mf,
+body.show_news .top .menu .badge a .mf,
+body.show_training .top .menu .badge a .mf,
+body.show_contact .top .menu .badge a .mf
 {
 	animation-name: badge_mf_folding;
     animation-duration: 1s;
@@ -141,7 +141,7 @@ body.contact .top .menu .badge a .mf
 	}
 }
 
-body.home .top .menu .badge a .mf
+body.show_home .top .menu .badge a .mf
 {
 	animation-name: badge_mf_unfolding;
     animation-duration: 1s;
@@ -168,18 +168,18 @@ body .top .menu .badge a .uf
     margin-top: -10px;
 }
 
-body.club .top .menu .badge a .uf,
-body.news .top .menu .badge a .uf,
-body.training .top .menu .badge a .uf,
-body.contact .top .menu .badge a .uf
+body.show_club .top .menu .badge a .uf,
+body.show_news .top .menu .badge a .uf,
+body.show_training .top .menu .badge a .uf,
+body.show_contact .top .menu .badge a .uf
 {
 	display: none;
 }
 
-body.club .top .menu .badge,
-body.news .top .menu .badge,
-body.training .top .menu .badge,
-body.contact .top .menu .badge
+body.show_club .top .menu .badge,
+body.show_news .top .menu .badge,
+body.show_training .top .menu .badge,
+body.show_contact .top .menu .badge
 {
 	animation-name: badge_folding;
     animation-duration: 0.8s;
@@ -195,7 +195,7 @@ body.contact .top .menu .badge
 	}
 }
 
-body.home .top .menu .badge
+body.show_home .top .menu .badge
 {
 	animation-name: badge_unfolding;
     animation-duration: 0.8s;

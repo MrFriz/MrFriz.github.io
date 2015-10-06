@@ -47,8 +47,8 @@
             anchors: anchors,
             onLeave: function(index, nextIndex, direction)
             {
-            	$('body').removeClass(anchors[index-1]);
-            	$('body').addClass(anchors[nextIndex-1]);
+            	$('body').removeClass('show_'+anchors[index-1]);
+            	$('body').addClass("show_"+anchors[nextIndex-1]);
             },
 	        afterLoad: function(anchorLink, index){},
 	        afterRender: function(){},
