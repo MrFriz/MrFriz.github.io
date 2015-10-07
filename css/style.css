@@ -6,10 +6,15 @@ body
 }
 
 h2 {
+	text-align: left;
+	padding: 0;
+	color: #198C97;
 	text-transform: uppercase;
-    color: #09353C;
-    padding-top: 0;
-    margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom : 1px solid #D2E8EA;
+	margin: 0;
+	background-color: white;
+	margin-bottom: 10px;
 }
 
 .home 
@@ -88,7 +93,7 @@ h2 {
 	height: 40px;
 }
 
-.top .menu .logo a
+.top .menu .badge a
 {
 	height: 199px;
 	width: 276px;
@@ -100,17 +105,93 @@ h2 {
 	font-size: 0;
 }
 
-body.club .top .menu .logo,
-body.news .top .menu .logo,
-body.training .top .menu .logo,
-body.contact .top .menu .logo
+body .top .menu .badge a .logo
 {
-	animation-name: logo_folding;
-    animation-duration: 0.5s;
+    background-image: url('../images/badge_logo.png');
+    height: 100px;
+    width: 130px;
+    margin: auto;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: 30px 20px;
+}
+
+body .top .menu .badge a .mf
+{
+	background-image: url('../images/badge_mf.png');
+	height: 58px;
+	width: 200px;
+	margin: auto;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	margin-top: -18px;
+}
+
+body.show_club .top .menu .badge a .mf,
+body.show_news .top .menu .badge a .mf,
+body.show_training .top .menu .badge a .mf,
+body.show_contact .top .menu .badge a .mf
+{
+	animation-name: badge_mf_folding;
+    animation-duration: 1s;
+	margin-top: 5px;
+}
+
+@keyframes badge_mf_folding {
+	from {
+		margin-top: -18px;
+	}
+	to {
+		margin-top: 5px;
+	}
+}
+
+body.show_home .top .menu .badge a .mf
+{
+	animation-name: badge_mf_unfolding;
+    animation-duration: 1s;
+	margin-top: -18px;
+}
+
+@keyframes badge_unfolding {
+	from {
+		margin-top: 5px;
+	}
+	to {
+		margin-top: -20px;
+	}
+}
+
+body .top .menu .badge a .uf
+{
+    background-image: url('../images/badge_uf.png');
+    height: 24px;
+    width: 140px;
+    margin: auto;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+
+body.show_club .top .menu .badge a .uf,
+body.show_news .top .menu .badge a .uf,
+body.show_training .top .menu .badge a .uf,
+body.show_contact .top .menu .badge a .uf
+{
+	display: none;
+}
+
+body.show_club .top .menu .badge,
+body.show_news .top .menu .badge,
+body.show_training .top .menu .badge,
+body.show_contact .top .menu .badge
+{
+	animation-name: badge_folding;
+    animation-duration: 0.8s;
     margin-top: -100px;
 }
 
-@keyframes logo_folding {
+@keyframes badge_folding {
 	from {
 		margin-top: 0;
 	}
@@ -119,14 +200,14 @@ body.contact .top .menu .logo
 	}
 }
 
-body.home .top .menu .logo
+body.show_home .top .menu .badge
 {
-	animation-name: logo_unfolding;
-    animation-duration: 0.5s;
+	animation-name: badge_unfolding;
+    animation-duration: 0.8s;
 	margin-top: 0;
 }
 
-@keyframes logo_unfolding {
+@keyframes badge_unfolding {
 	from {
 		margin-top: -100px;
 	}
@@ -160,8 +241,9 @@ body.home .top .menu .logo
 	background-image: url('../images/bottom.png');
 	height: 61px;
 	width: 151px;
-	margin: auto;
 	margin-top: 18px;
+	margin-left: 15px;
+	margin-right: 15px;
 	background-size: contain;
 	background-repeat: no-repeat;
     display: inline-block;
@@ -271,51 +353,68 @@ a
 
 .news
 {
-	
+	background-image: url('../images/Site_Mrfriz_fond3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #09333a;
 }
 
-.news .content
+.section.news .bloc
 {
-    width: 500px;
-    border: 20px white solid;
-    margin: auto;
+    max-width: 500px;
+	margin: auto;
+	background-color: white;
+	padding: 20px 40px 40px 40px;
+	position: relative;
+	margin-top: -60px;
+	vertical-align: top;
 }
 
 .club
 {
-	background-image: url('../images/club.jpg');
+	background-image: url('../images/Site_Mrfriz_fond2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .club .bloc 
 {
-	max-width: 500px;
+	max-width: 800px;
 	margin: auto;
 	background-color: white;
-	padding: 10px;
+	padding: 20px 40px 40px 40px;
+	position: relative;
+	margin-top: -60px;
+	vertical-align: top;
 }
 
-.club .bloc h2
+.club .bloc .photo_1
 {
-	width: 100%;
-	text-align: center;
-	padding: 10px 0;
-	background-color: #198C97;
-	color: white;
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
 }
 
-.club .bloc h3
+.club .bloc .photo_2
 {
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
 }
 
 .club .bloc p
 {
+	margin:0;
+	margin-bottom: 10px;
 	margin-left: 20px;
-	margin-right: 20px;
+	text-align: justify;
+    display: inline-block;
+	width: 470px;
+    vertical-align: top;
 }
 
 .training 
@@ -327,10 +426,12 @@ a
 
 .training .bloc 
 {
-	width: 500px;
+	max-width: 500px;
 	margin: auto;
-	background-color: #fbf9f5;
-	border: 8px solid #09333A;
-	padding: 40px;
-	padding-top: 20px;
+	background-color: white;
+	padding: 20px 40px 40px 40px;
+	position: relative;
+	margin-top: -60px;
+	vertical-align: top;
 }
+
