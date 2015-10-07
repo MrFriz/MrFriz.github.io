@@ -221,7 +221,10 @@ body.show_home .top .menu .badge
 	border-bottom: solid 2px #537075;
 }
 
-.menu .menu-item.selected
+.show_training .menu .menu-item.menu-training,
+.show_news .menu .menu-item.menu-news,
+.show_club .menu .menu-item.menu-club,
+.show_contact .menu .menu-item.menu-contact
 {
 	border-bottom: solid 2px #537075;
 }
@@ -425,6 +428,24 @@ a
 }
 
 .training .bloc 
+{
+	max-width: 500px;
+	margin: auto;
+	background-color: white;
+	padding: 20px 40px 40px 40px;
+	position: relative;
+	margin-top: -60px;
+	vertical-align: top;
+}
+
+.contact 
+{
+	background-image: url('../images/training.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact .bloc 
 {
 	max-width: 500px;
 	margin: auto;
