@@ -108,12 +108,12 @@ h2 {
 body .top .menu .badge a .logo
 {
     background-image: url('../images/badge_logo.png');
-    height: 90px;
-    width: 100px;
+    height: 100px;
+    width: 130px;
     margin: auto;
     background-size: 80px;
     background-repeat: no-repeat;
-    background-position: 0 10px;
+    background-position: 30px 20px;
 }
 
 body .top .menu .badge a .mf
@@ -124,7 +124,7 @@ body .top .menu .badge a .mf
 	margin: auto;
 	background-size: 200px;
 	background-repeat: no-repeat;
-	margin-top: -20px;
+	margin-top: -18px;
 }
 
 body.show_club .top .menu .badge a .mf,
@@ -241,8 +241,9 @@ body.show_home .top .menu .badge
 	background-image: url('../images/bottom.png');
 	height: 61px;
 	width: 151px;
-	margin: auto;
 	margin-top: 18px;
+	margin-left: 15px;
+	margin-right: 15px;
 	background-size: contain;
 	background-repeat: no-repeat;
     display: inline-block;
