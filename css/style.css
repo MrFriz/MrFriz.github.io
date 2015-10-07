@@ -429,13 +429,18 @@ a
 
 .training .bloc 
 {
-	max-width: 500px;
+	max-width: 800px;
 	margin: auto;
 	background-color: white;
 	padding: 20px 40px 40px 40px;
 	position: relative;
 	margin-top: -60px;
 	vertical-align: top;
+}
+
+.training .bloc .map_container
+{
+	height: 400px;
 }
 
 .contact 
