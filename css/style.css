@@ -358,6 +358,7 @@ a
     width: 500px;
     border: 40px white solid;
     margin: auto;
+    margin-top: -60px;
 }
 
 .club
@@ -369,53 +370,41 @@ a
 
 .club .bloc 
 {
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 	background-color: white;
-	padding: 40px;
+	padding: 20px 40px 40px 40px;
 	position: relative;
 	margin-top: -60px;
+	vertical-align: top;
 }
 
 .club .bloc h2
 {
-	width: 100%;
-	text-align: center;
+	text-align: left;
 	padding: 0;
 	color: #198C97;
-}
-
-.club .bloc .left 
-{
-	width: 300px;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.club .bloc .right
-{
-	width: 400px;
-	display: inline-block;
-	vertical-align: top;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom : 1px solid #D2E8EA;
 }
 
 .club .bloc .photo_1
 {
-	background-image: url('../images/photo_1.jpg');
 	background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
     height: 200px;
+    display: inline-block;
 }
 
 .club .bloc .photo_2
 {
-	background-image: url('../images/all.jpg');
 	background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
     height: 200px;
-    margin-top: 40px;
+    display: inline-block;
 }
 
 .club .bloc p
@@ -424,6 +413,9 @@ a
 	margin-bottom: 10px;
 	margin-left: 20px;
 	text-align: justify;
+    display: inline-block;
+	width: 470px;
+    vertical-align: top;
 }
 
 .training 
@@ -433,12 +425,24 @@ a
     background-repeat: no-repeat;
 }
 
+.training h2 
+{
+	text-align: left;
+	padding: 0;
+	color: #198C97;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom : 1px solid #D2E8EA;
+}
+
 .training .bloc 
 {
-	width: 500px;
+	max-width: 500px;
 	margin: auto;
-	background-color: #fbf9f5;
-	border: 8px solid #09333A;
-	padding: 40px;
-	padding-top: 20px;
+	background-color: white;
+	padding: 20px 40px 40px 40px;
+	position: relative;
+	margin-top: -60px;
+	vertical-align: top;
 }
+
