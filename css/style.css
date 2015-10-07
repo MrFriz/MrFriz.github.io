@@ -134,15 +134,15 @@ body.show_contact .top .menu .badge a .mf
 {
 	animation-name: badge_mf_folding;
     animation-duration: 1s;
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 @keyframes badge_mf_folding {
 	from {
-		margin-top: -20px;
+		margin-top: -18px;
 	}
 	to {
-		margin-top: 15px;
+		margin-top: 5px;
 	}
 }
 
@@ -150,12 +150,12 @@ body.show_home .top .menu .badge a .mf
 {
 	animation-name: badge_mf_unfolding;
     animation-duration: 1s;
-	margin-top: -20px;
+	margin-top: -18px;
 }
 
 @keyframes badge_unfolding {
 	from {
-		margin-top: 15px;
+		margin-top: 5px;
 	}
 	to {
 		margin-top: -20px;
