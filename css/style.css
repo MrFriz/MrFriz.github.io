@@ -491,17 +491,43 @@ a
 
 .section.contact .bloc 
 {
-	max-width: 500px;
+	max-width: 800px;
 	margin: auto;
 	background-color: white;
 	padding: 20px 40px 40px 40px;
 	position: relative;
 	margin-top: -60px;
 	vertical-align: top;
+	position: relative;
 }
 
 .contact a
 {
 	text-decoration: underline;
 	color: #198C97;
+}
+
+.contact .left
+{
+	width: 200px;
+}
+
+.contact .right
+{
+	position: absolute;
+	left: 380px;
+	right: 120px;
+	top: 120px;
+	bottom: 120px;
+}
+
+.contact .logo
+{
+	background-image: url('../images/LOGO_EXE_FOND.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border: 20px solid #09333A;
+	height: 100%;
+	width: 100%;
 }
