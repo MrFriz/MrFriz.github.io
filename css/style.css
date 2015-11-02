@@ -142,7 +142,7 @@ body.show_contact .top .menu .badge a .mf
 {
 	animation-name: badge_mf_folding;
     animation-duration: 1s;
-		animation-direction: normal;
+	animation-direction: normal;
 	margin-top: 5px;
 }
 
@@ -202,9 +202,48 @@ body.show_news .top .menu .badge,
 body.show_training .top .menu .badge,
 body.show_contact .top .menu .badge
 {
-	animation-name: badge_folding;
-    animation-duration: 0.8s;
+	-webkit-animation: badge_folding 0.8s linear 1 normal;
+	-moz-animation: badge_folding 0.8s linear 1 normal;
+	-ms-animation: badge_folding 0.8s linear 1 normal;
+	-o-animation: badge_folding 0.8s linear 1 normal;
+	animation: badge_folding 0.8s linear 1 normal; /* this comes last */
     margin-top: -100px;
+}
+
+body.show_home .top .menu .badge
+{
+	-webkit-animation: badge_folding 0.8s linear 1 reverse;
+	-moz-animation: badge_folding 0.8s linear 1 reverse;
+	-ms-animation: badge_folding 0.8s linear 1 reverse;
+	-o-animation: badge_folding 0.8s linear 1 reverse;
+	animation: badge_folding 0.8s linear 1 reverse; /* this comes last */
+	margin-top: 0;
+}
+
+@-moz-keyframes aia2{
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: -100px;
+	}
+}
+
+@-webkit-keyframes aia2{
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: -100px;
+	}
+}
+@-o-keyframes aia2{
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: -100px;
+	}
 }
 
 @keyframes badge_folding {
@@ -213,22 +252,6 @@ body.show_contact .top .menu .badge
 	}
 	to {
 		margin-top: -100px;
-	}
-}
-
-body.show_home .top .menu .badge
-{
-	animation-name: badge_unfolding;
-    animation-duration: 0.8s;
-	margin-top: 0;
-}
-
-@keyframes badge_unfolding {
-	from {
-		margin-top: -100px;
-	}
-	to {
-		margin-top: 0;
 	}
 }
 
@@ -438,7 +461,7 @@ a
 
 .training
 {
-	background-image: url('../images/training.jpg');
+	background-image: url('../images/Site_Mrfriz_fond4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -461,7 +484,7 @@ a
 
 .contact 
 {
-	background-image: url('../images/training.jpg');
+	background-image: url('../images/Site_Mrfriz_fond3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -475,4 +498,10 @@ a
 	position: relative;
 	margin-top: -60px;
 	vertical-align: top;
+}
+
+.contact a
+{
+	text-decoration: underline;
+	color: #198C97;
 }
