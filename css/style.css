@@ -568,6 +568,15 @@ a
 		border: none;
 	}
 
+	.top .menu .center {
+		position: absolute;
+		top: 100px;
+		height: 100px;
+		left: 50%;
+		overflow: hidden;
+		margin-left: -137.5px;
+	}
+
 	.show_training .menu .menu-item.menu-training,
 	.show_news .menu .menu-item.menu-news,
 	.show_club .menu .menu-item.menu-club,
