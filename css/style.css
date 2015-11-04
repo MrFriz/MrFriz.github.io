@@ -558,6 +558,12 @@ a
 		width: 100%;
 	}
 
+	.menu .menu-item a {
+		height: 25px;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
 	.top .menu .menu-item:hover {
 		border: none;
 	}
