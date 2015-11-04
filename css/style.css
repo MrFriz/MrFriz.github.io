@@ -531,3 +531,55 @@ a
 	height: 100%;
 	width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+
+	body {
+
+	}
+
+	.top .menu {
+		height: auto;
+	}
+
+	.top .menu .center {
+		display: none;
+	}
+
+	.top .menu .left,
+	.top .menu .right {
+		position: inherit;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+	.top .menu .menu-item {
+		width: 100%;
+	}
+
+	.top .menu .menu-item:hover {
+		border: none;
+	}
+
+	.show_training .menu .menu-item.menu-training,
+	.show_news .menu .menu-item.menu-news,
+	.show_club .menu .menu-item.menu-club,
+	.show_contact .menu .menu-item.menu-contact
+	{
+		background-color: #1A9CA9;
+		border: none;
+	}
+
+	.section.club .bloc,
+	.section.training .bloc,
+	.section.contact .bloc {
+		overflow-y: auto;
+		position: absolute;
+		top: 160px;
+		bottom: 100px;
+		margin: 20px;
+		left: 80px;
+		right: 80px;
+	}
+}
