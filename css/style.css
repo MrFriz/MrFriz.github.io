@@ -80,6 +80,11 @@ h2 {
 	display: inline-block;
 }
 
+.menu .menu-item.menu-home
+{
+	display: none;
+}
+
 .menu .menu-item a
 {
 	color: #fcfdf7;
@@ -477,9 +482,19 @@ a
 	vertical-align: top;
 }
 
+.training .bloc .inner_bloc
+{
+	position: relative;
+	height: 100%;
+}
+
 .training .bloc .map_container
 {
-	height: 400px;
+	position: absolute;
+	top: 61px;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .contact 
@@ -532,6 +547,18 @@ a
 	width: 100%;
 }
 
+.section.news .fb-page
+{
+	width: 100%;
+	display: block;
+}
+
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    width: 100% !important; 
+}
+
 @media screen and (max-width: 900px) {
 
 	body {
@@ -552,6 +579,10 @@ a
 		width: 100%;
 		text-align: center;
 		margin: 0;
+	}
+
+	.menu .menu-item.menu-home {
+		display: inline-block;
 	}
 
 	.top .menu .menu-item {
@@ -577,6 +608,7 @@ a
 		margin-left: -137.5px;
 	}
 
+	.show_home .menu .menu-item.menu-home,
 	.show_training .menu .menu-item.menu-training,
 	.show_news .menu .menu-item.menu-news,
 	.show_club .menu .menu-item.menu-club,
@@ -591,10 +623,59 @@ a
 	.section.contact .bloc {
 		overflow-y: auto;
 		position: absolute;
-		top: 160px;
-		bottom: 100px;
+		top: 140px;
+		bottom: 80px;
 		margin: 20px;
-		left: 80px;
-		right: 80px;
+		left: 20px;
+		right: 20px;
+		text-align: center;
+	}
+
+	.bottom {
+		height: 68px
+	}
+
+	.bottom .logo {
+		display: none;
+	}	
+
+	.club .bloc .photo_1
+	{
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.club .bloc .photo_2
+	{
+		display: none;
+	}
+
+	.club .bloc p
+	{
+		width: auto;
+		margin-left: 0;
+	}
+
+	.section.news .bloc {
+		position: absolute;
+		top: 140px;
+		bottom: 80px;
+		margin: 20px;
+		left: 20px;
+		right: 20px;
+	}
+
+	.section.news .fb-page
+	{
+		width: 100%;
+		display: block;
+	}
+
+	.section.contact .bloc {
+		text-align: left;
+	}
+
+	.section.contact .bloc .right {
+		display: none;
 	}
 }
