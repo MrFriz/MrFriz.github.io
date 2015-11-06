@@ -523,27 +523,52 @@ a
 	color: #198C97;
 }
 
+.contact a.social
+{
+	background-color: #198C97;
+	padding: 0 10px;
+	height: 40px;
+	color: white;
+	width: 160px;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.contact a.social.facebook {
+	background-color: #3B5998;
+}
+
+.contact a.social.twitter {
+	background-color: #54ABEE;
+}
+
+.contact a.social i
+{
+	padding: 0 10px;
+}
+
 .contact .bloc .left
 {
 	width: 200px;
 }
 
-.section .contact .right
+.section.contact .right
 {
 	position: absolute;
 	left: 380px;
 	right: 120px;
-	top: 120px;
-	bottom: 120px;
+	top: 140px;
+	bottom: 140px;
 }
 
 .contact .logo
 {
 	background-image: url('../images/LOGO_EXE_FOND.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
-	border: 20px solid #09333A;
+	border-bottom: 5px solid #09333A;
 	height: 100%;
 	width: 100%;
 }
@@ -558,6 +583,10 @@ a
 .fb-page span, 
 .fb-page span iframe[style] { 
     width: 100% !important; 
+}
+
+._2p3a {
+    width: 960px!important;
 }
 
 @media screen and (max-width: 900px) {
