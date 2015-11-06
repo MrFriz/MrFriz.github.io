@@ -119,14 +119,6 @@ body .top .menu .badge a .logo
     background-size: 80px;
     background-repeat: no-repeat;
     background-position: 30px 20px;
-
-		opacity: 0;
-		transition: opacity ease 1s;
-}
-
-
-.show_home .top .menu .badge a .logo {
-	opacity: 1;
 }
 
 body .top .menu .badge a .mf
@@ -140,42 +132,6 @@ body .top .menu .badge a .mf
 	margin-top: -18px;
 }
 
-body.show_club .top .menu .badge a .mf,
-body.show_news .top .menu .badge a .mf,
-body.show_training .top .menu .badge a .mf,
-body.show_contact .top .menu .badge a .mf
-{
-	animation-name: badge_mf_folding;
-    animation-duration: 1s;
-	animation-direction: normal;
-	margin-top: 5px;
-}
-
-@keyframes badge_mf_folding {
-	from {
-		margin-top: -18px;
-	}
-	to {
-		margin-top: 5px;
-	}
-}
-
-body.show_home .top .menu .badge a .mf
-{
-	animation-name: badge_mf_unfolding;
-    animation-duration: 1s;
-	margin-top: -18px;
-}
-
-@keyframes badge_unfolding {
-	from {
-		margin-top: 5px;
-	}
-	to {
-		margin-top: -20px;
-	}
-}
-
 body .top .menu .badge a .uf
 {
     background-image: url('../images/badge_uf.png');
@@ -185,21 +141,10 @@ body .top .menu .badge a .uf
     background-size: 140px;
     background-repeat: no-repeat;
     margin-top: -10px;
-
-		opacity: 0;
-		transition: opacity ease 1s;
 }
 
 .show_home .top .menu .badge a .uf {
 	opacity: 1;
-}
-
-body.show_club .top .menu .badge a .uf,
-body.show_news .top .menu .badge a .uf,
-body.show_training .top .menu .badge a .uf,
-body.show_contact .top .menu .badge a .uf
-{
-	opacity: 0;
 }
 
 body.show_club .top .menu .badge,
@@ -217,38 +162,12 @@ body.show_contact .top .menu .badge
 
 body.show_home .top .menu .badge
 {
-	-webkit-animation: badge_folding 0.8s linear 1 reverse;
-	-moz-animation: badge_folding 0.8s linear 1 reverse;
-	-ms-animation: badge_folding 0.8s linear 1 reverse;
-	-o-animation: badge_folding 0.8s linear 1 reverse;
-	animation: badge_folding 0.8s linear 1 reverse; /* this comes last */
+	-webkit-animation: badge_unfolding 0.8s linear 1;
+	-moz-animation: badge_unfolding 0.8s linear 1;
+	-ms-animation: badge_unfolding 0.8s linear 1;
+	-o-animation: badge_unfolding 0.8s linear 1;
+	animation: badge_unfolding 0.8s linear 1; /* this comes last */
 	margin-top: 0;
-}
-
-@-moz-keyframes aia2{
-	from {
-		margin-top: 0;
-	}
-	to {
-		margin-top: -100px;
-	}
-}
-
-@-webkit-keyframes aia2{
-	from {
-		margin-top: 0;
-	}
-	to {
-		margin-top: -100px;
-	}
-}
-@-o-keyframes aia2{
-	from {
-		margin-top: 0;
-	}
-	to {
-		margin-top: -100px;
-	}
 }
 
 @keyframes badge_folding {
@@ -257,6 +176,97 @@ body.show_home .top .menu .badge
 	}
 	to {
 		margin-top: -100px;
+	}
+}
+
+@keyframes badge_unfolding {
+	from {
+		margin-top: -100px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
+body.show_club .top .menu .badge .uf,
+body.show_news .top .menu .badge .uf,
+body.show_training .top .menu .badge .uf,
+body.show_contact .top .menu .badge .uf
+{
+	-webkit-animation: hide 0.8s linear 1 normal;
+	-moz-animation: hide 0.8s linear 1 normal;
+	-ms-animation: hide 0.8s linear 1 normal;
+	-o-animation: hide 0.8s linear 1 normal;
+	animation: hide 0.8s linear 1 normal; /* this comes last */
+    opacity: 0;
+}
+
+body.show_home .top .menu .badge .uf
+{
+	-webkit-animation: show 0.8s linear 1 normal;
+	-moz-animation: show 0.8s linear 1 normal;
+	-ms-animation: show 0.8s linear 1 normal;
+	-o-animation: show 0.8s linear 1 normal;
+	animation: show 0.8s linear 1 normal; /* this comes last */
+    opacity: 1;
+}
+
+@keyframes hide {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+body.show_club .top .menu .badge .mf,
+body.show_news .top .menu .badge .mf,
+body.show_training .top .menu .badge .mf,
+body.show_contact .top .menu .badge .mf
+{
+	-webkit-animation: move_mr_friz 0.8s linear 1 normal;
+	-moz-animation: move_mr_friz 0.8s linear 1 normal;
+	-ms-animation: move_mr_friz 0.8s linear 1 normal;
+	-o-animation: move_mr_friz 0.8s linear 1 normal;
+	animation: move_mr_friz 0.8s linear 1 normal; /* this comes last */
+    margin-top: 4px;
+}
+
+body.show_home .top .menu .badge .mf
+{
+	-webkit-animation: move_back_mr_friz 0.8s linear 1 normal;
+	-moz-animation: move_back_mr_friz 0.8s linear 1 normal;
+	-ms-animation: move_back_mr_friz 0.8s linear 1 normal;
+	-o-animation: move_back_mr_friz 0.8s linear 1 normal;
+	animation: move_back_mr_friz 0.8s linear 1 normal; /* this comes last */
+    margin-top: -18px;
+}
+
+@keyframes move_mr_friz {
+	from {
+		margin-top: -18px;
+	}
+	to {
+		margin-top: 4px;
+	}
+}
+
+@keyframes move_back_mr_friz {
+	from {
+		margin-top: 4px;
+	}
+	to {
+		margin-top: -18px;
 	}
 }
 
