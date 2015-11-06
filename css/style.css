@@ -583,22 +583,6 @@ a
 	width: 100%;
 }
 
-.section.news .fb-page
-{
-	width: 100%;
-	display: block;
-}
-
-.fb-page, 
-.fb-page span, 
-.fb-page span iframe[style] { 
-    width: 100% !important; 
-}
-
-._2p3a {
-    width: 960px!important;
-}
-
 @media screen and (max-width: 900px) {
 
 	body {
