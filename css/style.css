@@ -118,7 +118,7 @@ body .top .menu .badge a .logo
     margin: auto;
     background-size: 80px;
     background-repeat: no-repeat;
-    background-position: 30px 20px;
+    background-position: 25px 20px;
 }
 
 body .top .menu .badge a .mf
@@ -574,11 +574,10 @@ a
 
 .contact .bloc .logo
 {
-	background-image: url('../images/LOGO_EXE_FOND.jpg');
+	background-image: url('../images/contact_logo.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
-	border-bottom: 5px solid #09333A;
 	height: 100%;
 	width: 100%;
 }
