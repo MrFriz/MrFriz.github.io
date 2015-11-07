@@ -118,7 +118,7 @@ body .top .menu .badge a .logo
     margin: auto;
     background-size: 80px;
     background-repeat: no-repeat;
-    background-position: 30px 20px;
+    background-position: 25px 20px;
 }
 
 body .top .menu .badge a .mf
@@ -140,7 +140,7 @@ body .top .menu .badge a .uf
     margin: auto;
     background-size: 140px;
     background-repeat: no-repeat;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 
 .show_home .top .menu .badge a .uf {
