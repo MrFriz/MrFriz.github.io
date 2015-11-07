@@ -508,6 +508,11 @@ a
 	right: 0;
 }
 
+.training .bloc .map_container iframe
+{
+	border : none;
+}
+
 .contact 
 {
 	background-image: url('../images/Site_Mrfriz_fond3.jpg');
