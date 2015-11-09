@@ -76,6 +76,7 @@
 
         $('.menu .mi').click(function()
         {
+        	ga('send', 'pageview');
         	$('body').removeClass(body_class);
         	body_class = $(this).attr('data-menuanchor')
         	$('body').addClass(body_class);
