@@ -125,9 +125,9 @@ body .top .menu .badge a .mf
 {
 	background-image: url('../images/badge_mf.png');
 	height: 58px;
-	width: 200px;
+	width: 210px;
 	margin: auto;
-	background-size: 200px;
+	background-size: 210px;
 	background-repeat: no-repeat;
 	margin-top: -18px;
 }
@@ -140,7 +140,7 @@ body .top .menu .badge a .uf
     margin: auto;
     background-size: 140px;
     background-repeat: no-repeat;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 
 .show_home .top .menu .badge a .uf {
@@ -508,6 +508,11 @@ a
 	right: 0;
 }
 
+.training .bloc .map_container iframe
+{
+	border : none;
+}
+
 .contact 
 {
 	background-image: url('../images/Site_Mrfriz_fond3.jpg');
@@ -714,7 +719,5 @@ a
 	{
 		display: none;
 	}
-
-
 
 }
