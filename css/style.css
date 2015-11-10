@@ -701,4 +701,20 @@ a
 	.section.contact .bloc .right {
 		display: none;
 	}
+
+	.training .bloc .inner_bloc {
+		min-height: auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.club .bloc .photo_1,
+	.club .bloc .photo_2
+	{
+		display: none;
+	}
+
+
+
 }
