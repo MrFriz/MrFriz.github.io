@@ -427,6 +427,11 @@ a
 	vertical-align: top;
 }
 
+.section.news .bloc .link_facebook
+{
+	display: none;
+}
+
 .club
 {
 	background-image: url('../images/Site_Mrfriz_fond2.jpg');
@@ -513,6 +518,11 @@ a
 	border : none;
 }
 
+.training .bloc .button.link_gmap
+{
+	display: none;
+}
+
 .contact 
 {
 	background-image: url('../images/Site_Mrfriz_fond3.jpg');
@@ -538,7 +548,7 @@ a
 	color: #198C97;
 }
 
-.contact a.social
+a.button
 {
 	background-color: #198C97;
 	padding: 0 10px;
@@ -550,15 +560,15 @@ a
     line-height: 40px;
 }
 
-.contact a.social.facebook {
+a.button.facebook {
 	background-color: #3B5998;
 }
 
-.contact a.social.twitter {
+a.button.twitter {
 	background-color: #54ABEE;
 }
 
-.contact a.social i
+a.button i
 {
 	padding: 0 10px;
 }
@@ -710,9 +720,31 @@ a
 	.training .bloc .inner_bloc {
 		min-height: auto;
 	}
-}
 
-@media screen and (max-width: 500px) {
+	.news .bloc .fb-page
+	{
+		display: none;
+	}
+
+	.section.news .bloc .link_facebook
+	{
+		display: block;
+		margin: auto;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.training .bloc .map_container
+	{
+		display: none;
+	}
+
+	.training .bloc .button.link_gmap
+	{
+		display: block;
+		width: auto;
+		margin-top: 40px;
+	}
 
 	.club .bloc .photo_1,
 	.club .bloc .photo_2
@@ -720,4 +752,10 @@ a
 		display: none;
 	}
 
+
+}
+
+@media screen and (max-width: 500px) {
+
+	
 }
