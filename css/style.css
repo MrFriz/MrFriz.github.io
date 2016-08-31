@@ -478,6 +478,9 @@ a
 	width: 470px;
     vertical-align: top;
 }
+.club .bloc p a {
+	font-size: inherit;
+}
 
 .training
 {
