@@ -477,6 +477,7 @@ a
     display: inline-block;
 	width: 470px;
     vertical-align: top;
+    line-height: 1.5em;
 }
 
 .training
@@ -552,9 +553,7 @@ a.button
 {
 	background-color: #198C97;
 	padding: 0 10px;
-	height: 40px;
 	color: white;
-	width: 160px;
     display: block;
     text-decoration: none;
     line-height: 40px;
@@ -752,10 +751,70 @@ a.button i
 		display: none;
 	}
 
+	.section.news .bloc
+	{
+		max-width: none;
+	}
+
 
 }
 
 @media screen and (max-width: 500px) {
+	h2
+	{
+		font-size: 14px;
+	}
 
+	.section.club .bloc,
+	.section.training .bloc,
+	.section.news .bloc,
+	.section.contact .bloc
+	{
+		padding:20px;
+	}
+
+	.club .bloc p
+	{
+		text-align: left;
+	}
 	
+}
+
+.langs
+{
+	position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.langs a
+{
+	width: 24px;
+	height: 12px;
+	display: inline-block;
+	transition: all 0.2s;
+	border: #198c97 solid 6px;
+}
+
+.langs a:hover
+{
+	border: #fbfaf6 solid 6px;
+}
+
+.langs .en
+{
+	background-image: url('../images/flags/en.png');
+}
+
+.langs .de
+{
+	width: 20px;
+	background-image: url('../images/flags/de.png');
+}
+
+.langs .es
+{
+	width: 18px;
+	background-image: url('../images/flags/es.png');
 }

@@ -1,0 +1,20 @@
+{
+	"Le club" : "About",
+	"Actualités" : "News",
+	"Entraînements" : "Tranings",
+
+	"Qui sommes-nous ?" : "Who are we?",
+	"club_1" : "Mr Friz is an ultimate frisbee club from Rennes, Bretagne, France. From the 2000 year when it was created by INSA students, Mr Friz compete annualy at the French Ultimate Club Championships.",
+	"club_2" : "Mr Friz is now affiliated wit the city of Rennes. Ours main goals are the promotion of the Ultimate Frisbee sport and its values of responsability, communication, spirit of fair-play, diversity and team spirit.",
+
+	"Nous contacter" : "Contact us",
+	"Par email" : "By email",
+	"Par les réseaux sociaux" : "By social networks",
+	"Par courrier" : "By posting",
+
+	"Quoi de neuf ?" : "What's up?",
+
+	"Entraînements" : "Trainings",
+	"training_map" : { "src" : ""}
+
+}
