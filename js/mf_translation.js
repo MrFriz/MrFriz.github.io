@@ -4,6 +4,10 @@ mf_translation = function()
 	{
 		var lang = $_GET('lang');
 
+		$('body').addClass(lang?lang:'fr');
+
+		if(!lang) return;
+
 		$('*[t]').each(function(i, e)
 		{
 			$.ajax({

@@ -448,14 +448,14 @@ a
 	position: relative;
 	margin-top: -60px;
 	vertical-align: top;
+	text-align: center;
 }
 
 .club .bloc .photo_1
 {
 	background-size: contain;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+    width: 500px;
     display: inline-block;
 }
 
@@ -463,9 +463,9 @@ a
 {
 	background-size: contain;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+    width: 500px;
     display: inline-block;
+    padding: 20px;
 }
 
 .club .bloc p
@@ -475,7 +475,6 @@ a
 	margin-left: 20px;
 	text-align: justify;
     display: inline-block;
-	width: 470px;
     vertical-align: top;
     line-height: 1.5em;
 }
@@ -780,6 +779,14 @@ a.button i
 	
 }
 
+@media screen and (max-height: 780px) {
+	.club .bloc .photo_1,
+	.club .bloc .photo_2
+	{
+		display: none;
+	}
+}
+
 .langs
 {
 	position: absolute;
@@ -817,4 +824,18 @@ a.button i
 {
 	width: 18px;
 	background-image: url('../images/flags/es.png');
+}
+
+.langs .fr
+{
+	width: 18px;
+	background-image: url('../images/flags/fr.png');
+}
+
+body.en .langs .en,
+body.es .langs .es,
+body.de .langs .de,
+body.fr .langs .fr
+{
+	display: none;
 }
