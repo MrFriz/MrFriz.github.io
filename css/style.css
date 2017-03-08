@@ -595,6 +595,59 @@ a.button i
 	width: 100%;
 }
 
+.langs
+{
+	position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.langs a
+{
+	width: 24px;
+	height: 12px;
+	display: inline-block;
+	transition: all 0.2s;
+	border: #198c97 solid 6px;
+}
+
+.langs a:hover
+{
+	border: #fbfaf6 solid 6px;
+}
+
+.langs .en
+{
+	background-image: url('../images/flags/en.png');
+}
+
+.langs .de
+{
+	width: 20px;
+	background-image: url('../images/flags/de.png');
+}
+
+.langs .es
+{
+	width: 18px;
+	background-image: url('../images/flags/es.png');
+}
+
+.langs .fr
+{
+	width: 18px;
+	background-image: url('../images/flags/fr.png');
+}
+
+body.en .langs .en,
+body.es .langs .es,
+body.de .langs .de,
+body.fr .langs .fr
+{
+	display: none;
+}
+
 @media screen and (max-width: 900px) {
 
 	body {
@@ -776,7 +829,23 @@ a.button i
 	{
 		text-align: left;
 	}
+
+	.bottom
+	{
+		height: 120px;
+	}
+
+	.bottom .facebook, .bottom .twitter, .bottom .youtube, .bottom .email
+	{
+		height: 34px;
+	}
 	
+	.langs
+	{
+		display: block;
+	    position: static;
+	    margin-top: 0;
+	}
 }
 
 @media screen and (max-height: 780px) {
@@ -787,55 +856,3 @@ a.button i
 	}
 }
 
-.langs
-{
-	position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -6px;
-}
-
-.langs a
-{
-	width: 24px;
-	height: 12px;
-	display: inline-block;
-	transition: all 0.2s;
-	border: #198c97 solid 6px;
-}
-
-.langs a:hover
-{
-	border: #fbfaf6 solid 6px;
-}
-
-.langs .en
-{
-	background-image: url('../images/flags/en.png');
-}
-
-.langs .de
-{
-	width: 20px;
-	background-image: url('../images/flags/de.png');
-}
-
-.langs .es
-{
-	width: 18px;
-	background-image: url('../images/flags/es.png');
-}
-
-.langs .fr
-{
-	width: 18px;
-	background-image: url('../images/flags/fr.png');
-}
-
-body.en .langs .en,
-body.es .langs .es,
-body.de .langs .de,
-body.fr .langs .fr
-{
-	display: none;
-}
