@@ -86,9 +86,21 @@ Mr Friz participe au d&eacute;veloppement de l'Ultimate Frisbee en proposant des
         	body_class = $(this).attr('data-menuanchor')
         	$('body').addClass(body_class);
         });
+
+         $('.poster').click(function()
+	    {
+	    	$('.poster').fadeOut(300);
+	    })
     });
 
+
+
 </script>
+
+	<div class="poster">
+		<div class="poster_close"></div>
+		<div class="poster_image"></div>
+	</div>
 
 	<div id="fullpage">
 

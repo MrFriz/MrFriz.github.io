@@ -859,3 +859,33 @@ body.fr .langs .fr
 	}
 }
 
+
+
+.poster
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;    
+    padding: 5%;
+    background-color: #ffffff7d;
+}
+
+.poster.hide
+{
+	display: none;
+}
+
+.poster .poster_image
+{
+    background-image: url(../images/poster.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
