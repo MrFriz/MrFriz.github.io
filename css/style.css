@@ -872,6 +872,7 @@ body.fr .langs .fr
     box-sizing: border-box;    
     padding: 5%;
     background-color: #ffffff7d;
+	display: none;
 }
 
 .poster.hide
